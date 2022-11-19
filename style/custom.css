@@ -1,10 +1,16 @@
-body {
-    overflow-x: hidden;
+html {
+    margin: 0;
+    padding: 0;
 }
 
-section {
-    padding-bottom: 4rem;
-    padding-top: 2rem;
+body {
+    overflow-x: hidden;
+    width: auto;
+    margin: 0;
+}
+
+header {
+    width: auto;
 }
 
 li.nav-item {
@@ -12,14 +18,25 @@ li.nav-item {
     padding-top: 5px;
 }
 
-.container {
-    padding-left: 0px;
-    padding-right: 0px;
+section {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+section p {
+    text-align: justify;
 }
 
 #border-line {
     border-top: 1px solid #0D4B28;
-   
+}
+
+.produtos {
+    padding-left: 40px;
+}
+
+#sobre {
+    padding-top: 10px;
 }
 
 .text-center {
@@ -37,9 +54,13 @@ textarea {
 }
 
 .card {
-    width: 32%;
+    width: 30%;
     float: left;
     margin: 5px;
+}
+
+.aling {
+    padding-left: 35px;
 }
 
 #contato {
@@ -51,7 +72,7 @@ textarea {
 footer {
     display: block;
     float: left;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     padding-top: 15px;
 }
@@ -59,4 +80,92 @@ footer {
 footer small {
     font-size: 80%;
     display: block;
+}
+
+/*tablet*/
+@media (max-width: 926px) {
+    li.nav-item {
+        font-size: 1.2rem;
+    }
+  
+    .col-md-5 {
+        width: 41%;
+        padding-top: 50px;
+    }
+
+    .btn-lg {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+   
+}
+
+/*smartphone*/
+@media (max-width: 426px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    li.nav-item {
+        font-size: 1rem;
+    }
+
+    h2 {
+        padding-left: 0px;
+    }
+
+    .produtos {
+        padding-left: 10px;
+    }
+
+    .aling {
+        padding-left: 5px;
+    }
+
+    .aling p {
+        line-height: 1rem;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    div.card {
+        flex-wrap: wrap;
+    }
+
+    #padding {
+        padding-bottom: 20px;
+    }
+
+    .col-md-5 {
+        width: auto;
+        padding-top: 5px;
+    }
+
+    .btn {
+        line-height: 1.2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    p.card-text {
+        text-align: left;
+        line-height: 1.2rem;
+        font-size: small;
+    }
+
 }

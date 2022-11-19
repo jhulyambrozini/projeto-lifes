@@ -17,9 +17,9 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container-fluid">
                 <div class="text-center">
-                   <img src="./images/Life's-logo.jpg" class="img-fluid" class="rounded" alt="Logo, uma flor verde de fundo transparente e ao lado o nome Life's, abaixo a frase 'moda e estilo' de tamanho pequeno, também de cor verde ">
+                    <img src="./images/Life's-logo.jpg" class="img-fluid" class="rounded" alt="Logo, uma flor verde de fundo transparente e ao lado o nome Life's, abaixo a frase 'moda e estilo' de tamanho pequeno, também de cor verde ">
                 </div>
                 <div class="col">
                     <ul class="nav justify-content-center">
@@ -31,8 +31,6 @@
                 </div>
         </div>
     </header>
-    
-   
 
     <section id="produtos">
 
@@ -40,32 +38,34 @@
             <div class="row" >
                 <div class="col">
 
-                    <h2>Produtos</h2>
+                    <h2 class="produtos">Produtos</h2>
 
-                    <div class="card">
-                        <img src="./images/conjunto-moleton.jpg" alt="Blusa e calça moletom rosa." class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Blusa e calça moletom</h5>
-                            <p class="card-text">Perfeito para noites frias, feito de um tecido confortavél para um sono tranquilo.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >tamanhos e preços</a>
+                    <div class="aling">
+                        <div class="card">
+                            <img src="./images/conjunto-moleton.jpg" alt="Blusa e calça moletom rosa." class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Blusa e calça moletom</h5>
+                                <p class="card-text" >Perfeito para noites frias, feito de um tecido confortavél para um sono tranquilo.</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >tamanhos e preços</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/conjunto-xadrez-jeans.jpg" alt="conjunto com cropped xadrez, jaqueta e short jeans, tênis branco e óculos de sol redondo." class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Conjunto jeans-xadrez</h5>
-                            <p class="card-text">Combinação inspirada no verão, ótimo para tarde ou a noite com os amigos.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">tamanhos e preços</a>
+    
+                        <div class="card">
+                            <img src="./images/conjunto-xadrez-jeans.jpg" alt="conjunto com cropped xadrez, jaqueta e short jeans, tênis branco e óculos de sol redondo." class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto jeans-xadrez</h5>
+                                <p class="card-text">Combinação inspirada no verão, ótimo para tarde ou a noite com os amigos.</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">tamanhos e preços</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./images/conjuto-noite.jpg" alt="Conjunto de saia justa e cropped azul escuro. " class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Conjunto pra noite</h5>
-                            <p class="card-text">Para chegar na boate e atrair atenções, feito para dançar a noite toda.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">tamanhos e preços</a>
+    
+                        <div class="card">
+                            <img src="./images/conjuto-noite.jpg" alt="Conjunto de saia justa e cropped azul escuro. " class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto pra noite</h5>
+                                <p class="card-text" id="padding">Para chegar na boate e atrair atenções, feito para dançar a noite toda.</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">tamanhos e preços</a>
+                            </div>
                         </div>
                     </div>
                     
@@ -75,23 +75,26 @@
 
     </section>
 
-    <section class="container" id="border-line">
-        <div id="sobre" >
-            <div class="row">
-                <div class="col-md-7 col-sm-12">
-                    <h2 >Sobre nós</h2>
-                    <p>Somos uma empresa focada na confecção e venda de roupas femininas, nosso catálogo foi feito por especialistas da moda atual e conta com combinações feitas especialmente para garotas que gostam de se vestir como sua digital influencer favorita.</p>
-                    <p>Com tamanhos e preços variados, aqui você encontra as melhores ofertas para arrasar no dia a dia, afinal todo garota gosta de estar bem produzida — mesmo que seja só pra ficar em casa.</p>
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/fazendo-roupas.jpg" alt="Uma mulher escrevendo no carderno com um busto de manequin ao seu lado, atrás há varios tecidos de cores diversificadas" class="img-fluid">
+    <section class="container">
+        <div id="border-line">
+            <div id="sobre" >
+                <div class="row">
+                    <div class="col-md-7 col-sm-12" >
+                        <h2 >Sobre nós</h2>
+                        <p>Somos uma empresa focada na confecção e venda de roupas femininas, nosso catálogo foi feito por especialistas da moda atual e conta com combinações feitas especialmente para garotas que gostam de se vestir como sua digital influencer favorita.</p>
+                        <p>Com tamanhos e preços variados, aqui você encontra as melhores ofertas para arrasar no dia a dia, afinal todo garota gosta de estar bem produzida — mesmo que seja só pra ficar em casa.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <img src="./images/fazendo-roupas.jpg" alt="Uma mulher escrevendo no carderno com um busto de manequin ao seu lado, atrás há varios tecidos de cores diversificadas" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
+       
     </section>
 
     <section  id ="contato">
-    <div  classe ="container" >
+    <div  classe ="container-fluid" >
         <div  class ="row " >
             <div  class =" col-md-6 col-sm-12 " >
                 <h2 > Contato </h2 >
