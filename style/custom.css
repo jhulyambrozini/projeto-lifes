@@ -13,6 +13,10 @@ header {
     width: auto;
 }
 
+.border-line-bottom {
+    border-bottom: 1px solid #0D4B28;
+}
+
 li.nav-item {
     font-size: 1.4rem;
     padding-top: 5px;
@@ -27,20 +31,44 @@ section p {
     text-align: justify;
 }
 
-#border-line {
-    border-top: 1px solid #0D4B28;
-}
-
-.produtos {
-    padding-left: 40px;
-}
+/* style sobre */
 
 #sobre {
     padding-top: 10px;
 }
 
-.text-center {
-    border-bottom: 1px solid #0D4B28;
+.border-line-top {
+    border-top: 1px solid #0D4B28;
+}
+
+
+.text-center-img {
+    text-align: center !important;
+}
+
+/* style produtos */
+
+.produtos {
+    padding-left: 40px;
+}
+
+.card {
+    width: 30%;
+    float: left;
+    margin: 5px;
+    height: auto;
+}
+
+.aling-card {
+    padding-left: 35px;
+}
+
+/* style form*/
+
+#contato {
+    background-color: #0D4B28;
+    color: white;
+    padding: 20px;
 }
 
 input,
@@ -53,21 +81,8 @@ textarea {
     font-size: 1.2rem;
 }
 
-.card {
-    width: 30%;
-    float: left;
-    margin: 5px;
-}
 
-.aling {
-    padding-left: 35px;
-}
-
-#contato {
-    background-color: #0D4B28;
-    color: white;
-    padding: 20px;
-}
+/* style footer*/
 
 footer {
     display: block;
@@ -82,14 +97,32 @@ footer small {
     display: block;
 }
 
+@media (max-width: 1440px) {
+    col.col-md-4 {
+        
+        flex-wrap: nowrap;
+    }
+}
+
 /*tablet*/
-@media (max-width: 926px) {
+@media (max-width: 768px) {
     li.nav-item {
         font-size: 1.2rem;
     }
+
+    .aling-card {
+        padding-left: 30px;
+    }
+
+    p.card-text {
+        text-align: justify;
+    }
+
+    #sobre {
+        padding: 10px;
+    }
   
-    .col-md-5 {
-        width: 41%;
+    .col-md-4 {
         padding-top: 50px;
     }
 
@@ -102,14 +135,10 @@ footer small {
 }
 
 /*smartphone*/
-@media (max-width: 426px) {
+@media (min-width: 320px) {
 
     body {
         overflow-x: hidden;
-    }
-
-    p {
-        font-size: .9rem;
     }
 
     li.nav-item {
@@ -118,6 +147,10 @@ footer small {
 
     h2 {
         padding-left: 0px;
+    }
+
+    p {
+        font-size: .9rem;
     }
 
     .produtos {
@@ -132,19 +165,29 @@ footer small {
         line-height: 1rem;
     }
 
+    div.card {
+        flex-wrap: wrap;
+    }
+
     .card-body {
         padding: 10px;
     }
 
-    div.card {
-        flex-wrap: wrap;
+    .card-title {
+        font-size: 1rem;
+    }
+   
+    p.card-text {
+        text-align: left;
+        line-height: 1.2rem;
+        font-size: small;
     }
 
     #padding {
         padding-bottom: 20px;
     }
 
-    .col-md-5 {
+    .col-md-4 {
         width: auto;
         padding-top: 5px;
     }
@@ -153,19 +196,10 @@ footer small {
         line-height: 1.2rem;
     }
 
-    .card-title {
-        font-size: 1rem;
-    }
-
     .btn-lg {
         padding: 10px;
         font-size: 1rem;
     }
 
-    p.card-text {
-        text-align: left;
-        line-height: 1.2rem;
-        font-size: small;
-    }
 
 }
