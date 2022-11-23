@@ -135,7 +135,7 @@ footer small {
 }
 
 /*smartphone*/
-@media (min-width: 320px) {
+@media (max-width: 426px) {
 
     body {
         overflow-x: hidden;
@@ -143,6 +143,10 @@ footer small {
 
     li.nav-item {
         font-size: 1rem;
+    }
+
+    section {
+        padding-top: .5rem;
     }
 
     h2 {
@@ -154,7 +158,7 @@ footer small {
     }
 
     .produtos {
-        padding-left: 10px;
+        padding-left: 35px;
     }
 
     .aling {
@@ -165,8 +169,11 @@ footer small {
         line-height: 1rem;
     }
 
+    .produtos{
+        padding-left: 32px;
+    }
     div.card {
-        flex-wrap: wrap;
+        width: auto;
     }
 
     .card-body {
@@ -177,6 +184,10 @@ footer small {
         font-size: 1rem;
     }
    
+    .aling-card {
+        padding-right: 30px;
+    }
+
     p.card-text {
         text-align: left;
         line-height: 1.2rem;
