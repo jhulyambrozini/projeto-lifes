@@ -31,6 +31,10 @@ section p {
     text-align: justify;
 }
 
+.carousel-item {
+    height: 700px;
+}
+
 /* style sobre */
 
 #sobre {
